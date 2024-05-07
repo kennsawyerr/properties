@@ -8,8 +8,11 @@ function App() {
   return (
     <>
       <Navbar />
+
+      <CircularSlide herotext="Lorem ipsum dolor" />
       <Home />
-      <CircularSlide herotext="lorem ipsum dolor" />
+
+      <CircularSlide herotext="Lorem ipsum dolor" />
     </>
   );
 }

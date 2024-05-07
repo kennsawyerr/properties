@@ -5,14 +5,19 @@ useState;
 
 //animation
 
+// import "aos/dist/aos.css";
+
+
+//animation
+import AOS from "aos";
 import "aos/dist/aos.css";
 
-const CircularSlide = (props) => {
+const CircularSlide = ({herotext}) => {
+    useEffect(() => {
+    AOS.init();
+  }, []);
   const [animationCompleted, setAnimationCompleted] = useState(false);
 
-  /* eslint-disable react/prop-types */ // TODO: upgrade to latest eslint tooling
-  const herotext = props.herotext;
-  console.log(herotext);
 
   const handleAnimationEnd = () => {
     setAnimationCompleted(true);
@@ -30,7 +35,7 @@ const CircularSlide = (props) => {
               <HiOutlineArrowDown />
             </div>
             <div className="text">
-              <p>{herotext}</p>
+              <p className="p">{herotext}</p>
             </div>
           </div>
         )}

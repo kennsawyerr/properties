@@ -82,6 +82,10 @@
   /* font family */
 }
 
+.p{
+  font-size: var(--sub-hvii);
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(150px, 1fr));
@@ -89,6 +93,21 @@
   gap: 10px;
   justify-content: space-between;
 }
+
+/* &:after{
+  content: "";
+  transition-property: transform;
+  transition-timing-function: ease-in;
+  transition-duration: .5s;
+  transition-delay: inherit ;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+} */
 
 .property-container li {
   width: fit-content;
@@ -159,9 +178,8 @@ ul {
   justify-content: end;
   width: fit-content;
   min-width: fit-content;
-  animation-name: roll;
+  animation-name: room;
   animation-timing-function: ease-in;
-  animation-timeline: scroll();
   animation-duration: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -336,4 +354,59 @@ body {
   color: black;
   background-color: white;
   width: fit-content;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ball {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  animation: roll 2s linear infinite, move 4s linear infinite alternate;
+}
+
+/* @keyframes roll {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+@keyframes move {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
