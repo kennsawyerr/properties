@@ -82,6 +82,26 @@
   /* font family */
 }
 
+
+
+/* reset */
+
+ul{
+  list-style: none;
+}
+
+
+
+.bor{
+  border: 2px solid pink;
+}
+.width-50{
+  width: 50%;
+  max-width: 600px;
+}
+li{
+  border: 2px solid green;
+}
 .p{
   font-size: var(--sub-hvii);
 }
@@ -93,6 +113,9 @@
   gap: 10px;
   justify-content: space-between;
 }
+
+
+
 
 /* &:after{
   content: "";
@@ -109,6 +132,12 @@
   background: white;
 } */
 
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
 .property-container li {
   width: fit-content;
 }
@@ -117,6 +146,26 @@ ul {
   padding: 0;
 }
 
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* navbar */
+
+.property-facts{
+  width: 6rem;
+}
+
+nav{
+  position: absolute;
+ width: 100%;
+  margin: 0 auto;
+  max-width: inherit;
+}
 .circle {
   width: 60px;
   height: 60px;

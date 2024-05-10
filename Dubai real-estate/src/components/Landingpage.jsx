@@ -8,7 +8,7 @@ const Landingpage = () => {
   return (
     <>
       <section className="container">
-        <main>
+        <main className="">
           {/* <motion.div *
             initial={{ x: 0 }}
             animate={{ x: 100 }}

@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState , useEffect} from "react";
+
 import { HiOutlineArrowDown } from "react-icons/hi2";
 import { FaArrowAltCircleUp } from "react-icons/fa";
 useState;
